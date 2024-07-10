@@ -43,10 +43,8 @@ public class RegisterTripUseCase
         {
             var errorMessages = result.Errors.Select(error => error.ErrorMessage).ToList();
 
-             throw new ErrorOnValidationException(errorMessages);
-            
-        }
-        
+             throw new ErrorOnValidationException(errorMessages);            
+        }        
     } 
 
 }
